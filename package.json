@@ -1,0 +1,23 @@
+{
+  "name": "cypress-bdd",
+  "version": "1.0.0",
+  "description": "Cypress Cucumber BDD testing",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "cypress:update-snapshots": "cypress run --env updateSnapshots=true",
+    "cypress:run-tests-with-reporter": "cypress run --reporter cypress-image-snapshot/reporter",
+    "cypress:run-tests-with-no-failure": "cypress run --env failOnSnapshotDiff=false"
+  },
+  "devDependencies": {
+    "cypress": "^6.8.0",
+    "cypress-cucumber-preprocessor": "^4.0.3",
+    "prettier": "2.2.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  }
+  
+}
