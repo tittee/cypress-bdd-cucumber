@@ -10,5 +10,13 @@ When('I fill contact form', () => {
 });
 
 When('I click on send from', () => {
-  ContactPage.submitForm();
+  ContactPage.submitForm();  
+});
+
+Then('I shoud see the popup', () => {
+  ContactPage.showPopup();
+});
+
+When('I click close the pupup', () => {
+  ContactPage.closeClickPopup();
 });

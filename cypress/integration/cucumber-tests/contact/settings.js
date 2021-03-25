@@ -7,3 +7,5 @@ export const SELECT_CLICK = '.sbToggle';
 export const SELECT_SUBJECT = '.sbOptions';
 export const INPUT_MESSAGE = 'textarea[name="message"]';
 export const SUBMIT_BUTTON = 'button[type="submit"].contact-btn';
+export const POPUP_CONTACT = '#pop-contact';
+export const BUTTON_POPUP_CLOSE = '#pop-contact .popup-cls';

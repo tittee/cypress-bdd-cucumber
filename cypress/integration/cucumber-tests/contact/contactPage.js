@@ -17,6 +17,17 @@ class ContactPage {
   static submitForm() {
     cy.get(setting.SUBMIT_BUTTON).click();
   }
+
+  static showPopup() {
+    cy.get(setting.POPUP_CONTACT)
+      .should('be.visible')
+      .wait(1000)
+      .contains('Attention Much Appreciated!');
+  }
+
+  static closeClickPopup() {
+    cy.get(setting.BUTTON_POPUP_CLOSE).click();
+  }
 }
 
 export default ContactPage;
